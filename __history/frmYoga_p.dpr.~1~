@@ -1,0 +1,14 @@
+program frmYoga_p;
+
+uses
+  Forms,
+  frmYoga_u in 'frmYoga_u.pas' {frmYoga};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmYoga, frmYoga);
+  Application.Run;
+end.
